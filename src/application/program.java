@@ -1,6 +1,5 @@
 package application;
 
-import entities.Board;
 import entities.Solver;
 
 import java.util.Scanner;

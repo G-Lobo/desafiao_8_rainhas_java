@@ -39,8 +39,14 @@ public class Solver {
     //imprime a lista de soluçoes
 
     public void printSolutions() {
+        if(solutions.isEmpty()) {
+            System.out.println("No solution found");
+            return;
+        }
+
         int count = 1;
         for (char[][] solution : solutions) {
+
             System.out.println("solução Nº" + count + ":");
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
@@ -50,6 +56,9 @@ public class Solver {
             }
             System.out.println();
             count++;
+
+
+
         }
     }
 }
